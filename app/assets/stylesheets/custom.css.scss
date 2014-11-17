@@ -44,6 +44,11 @@ fonts, mixins, variables
 	src:									font-url('open-sans/OpenSans-Regular.ttf');
 }
 
+@font-face {
+	font-family:					enriqueta;
+	src:									font-url('Enriqueta/Enriqueta-Regular.otf');
+}
+
 
 @mixin vertical-center {
 	position: relative;
@@ -63,6 +68,7 @@ $taupe:									#b38b6d;
 
 $blizzard-texture: 			url(http://www.transparenttextures.com/patterns/blizzard.png);
 $dimension-texture:			url(http://www.transparenttextures.com/patterns/dimension.png);
+$flowers-texture:				url(http://www.transparenttextures.com/patterns/wild-flowers.png);
 
 
 
@@ -105,6 +111,10 @@ h2 {
 
 h3 {
 	font-size: 24px;
+}
+
+p {
+	font-family: enriqueta;
 }
 
 header#top {
