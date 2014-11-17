@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SheSaidJyess</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="tint">
+		<div id="content">
+			<header id="top">
+				<h1>J & Z</h1>
+			</header>
+
+			<div id="main-nav">
+				<ul>
+					<%= nav_link_to "Home", root_path, {}, wrapper: 'li' %>
+					<%= nav_link_to "Stories", stories_path, {}, wrapper: 'li' %>
+					<%= nav_link_to "Events", events_path, {}, wrapper: 'li' %>
+					<%= nav_link_to "People", people_path, {}, wrapper: 'li' %>
+					<%= nav_link_to "RSVP", rsvp_path, {}, wrapper: 'li' %>
+				</ul>
+			</div>
+			<%= yield %>
+		</div>
+	</div>
+</body>
+</html>

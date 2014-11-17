@@ -1,0 +1,181 @@
+/*
+@import "bootstrap-sprockets";
+@import "bootstrap";
+*/
+
+/*=====================================
+fonts, mixins, variables
+======================================*/
+
+
+@font-face {
+  font-family:          montserrat;
+  src:                  font-url('Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family:          montserrat;
+  src:                  font-url('Montserrat/Montserrat-Bold.ttf');
+  font-weight:          bold;
+}
+
+@font-face {
+  font-family:          chelsea-market;
+  src:                  font-url('ChelseaMarket-Regular.ttf');
+}
+
+@font-face {
+  font-family:          aaargh;
+  src:                  font-url('Aaargh.ttf');
+}
+
+@font-face {
+  font-family:          folks;
+  src:                  font-url('Folks/Folks-Normal.ttf');
+}
+
+@font-face {
+  font-family:          cabin;
+  src:                  font-url('Cabin/Cabin-Regular.otf');
+}
+
+@font-face {
+	font-family:					open-sans;
+	src:									font-url('open-sans/OpenSans-Regular.ttf');
+}
+
+
+@mixin vertical-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+$amber: 								#ffb300;
+$dark-blue:							#375188;
+$dark-slate-blue:				#4e3dbd;
+$darker-blue:						#223254;
+$dropbox-blue:					#007ee5;
+//$lavender:							#d3c1dd;
+//$lavender: 							#d8b2d1;
+$lavender:							#c4a2be;
+$taupe:									#b38b6d;
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	//background-image: image-url('engagement_ring.jpg');
+	//background-size: cover;
+	background-color: $lavender;
+	position: relative;
+	//top: 0; left: 0; bottom: 0; right: 0;
+	color: white;
+	font-family: chelsea-market;
+}
+
+.tint {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	//background-color: rgba($lavender, .8);
+}
+
+#content {
+	width: 900px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 72px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+header#top {
+	text-align: center;
+	padding: 60px 0 20px 0;
+}
+
+a, a:visited, a:hover {
+	color: $lavender;
+	text-decoration: none;
+	font-family: chelsea-market;
+}
+
+#main-nav {
+	text-align: center;
+	background-color: white;
+	display: table;
+	width: 100%;
+
+	ul {
+		display: table-row;
+	}
+
+	li {
+		display: table-cell;
+		padding: 4px 0;
+		border: solid 2px white;
+
+		a:hover {
+			color: #AF995C;
+		}
+	}
+
+	li.selected {
+		background-color: $lavender;
+		a {
+			color: white;
+		}
+	}
+	
+	a {
+		display: block;
+	}
+}
+
+#home-content {
+	padding-bottom: 10px;
+	width: 900px;
+
+	img {
+		border: solid white 2px;
+		border-top: none;
+	}
+}
+
+#stories-content {
+	margin-top: 30px;
+
+	img {
+		border: solid white 2px;
+	}
+
+	.float-right {
+		float: right;
+		width: 450px;
+
+		h2 {
+			margin-bottom: 30px;
+		}
+
+		h3 {
+			margin-bottom: 10px;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+	}
+}
