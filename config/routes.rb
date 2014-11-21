@@ -6,6 +6,7 @@ SheSaidJyess::Application.routes.draw do
 	get 'rsvp' => 'static_pages#rsvp'
 	get 'events' => 'static_pages#events'
 	get 'people' => 'static_pages#people'
+	get 'registry' => 'static_pages#registry'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
