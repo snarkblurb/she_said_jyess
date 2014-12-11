@@ -8,26 +8,40 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="tint">
+	<header>
+		<h1>Jessica<br>&<br>Zak</h1>
+	</header>
+	
+	<div id="content">
+		<div id="tabs-container">
+			<div id="row">
+				<a href="#" class="tab">
+					<div class="image"></div>
+				</a>
 
-		<header id="top">
-			<h1>J & Z</h1>
-		</header>
+				<a href="#" class="tab">
+					<div class="image"></div>
+				</a>
 
-		<div id="main-nav">
-			<ul>
-				<%= nav_link_to "Home", root_path, {}, wrapper: 'li' %>
-				<%= nav_link_to "Stories", stories_path, {}, wrapper: 'li' %>
-				<%= nav_link_to "Events", events_path, {}, wrapper: 'li' %>
-				<%= nav_link_to "Registry", registry_path, {}, wrapper: 'li' %>
-				<%= nav_link_to "People", people_path, {}, wrapper: 'li' %>
-				<%= nav_link_to "RSVP", rsvp_path, {}, wrapper: 'li' %>
-			</ul>
-		</div>
+				<a href="#" class="tab">
+					<div class="image"></div>
+				</a>
+			</div>
+			<div id="row">
+				<a href="#" class="tab">
+					<div class="image"></div>
+				</a>
 
-		<div id="content">
-			<%= yield %>
+				<a href="#" class="tab">
+					<div class="image"></div>
+				</a>
+
+				<a href="#" class="tab">
+					<div class="image"></div>
+				</a>
+			</div>
 		</div>
 	</div>
+
 </body>
 </html>
