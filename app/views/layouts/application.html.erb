@@ -8,41 +8,38 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div id="main-content">
-		<div class="tint">
-			<div id="main-text">
-				<h1>Jessica<br>&<br>Zak</h1>
-			</div>
-		</div>
+	<div id="main-container">
+		<%= yield %>
 	</div>
 	
 	<div id="nav">
 		<div id="tabs-container">
 			<div id="row">
-				<a href="#" class="tab">
+				<%= link_to stories_path, class: "tab" do %>
 					<div class="image"></div>
-				</a>
+				<% end %>
 
-				<a href="#" class="tab">
+				<%= link_to root_path, class: "tab" do %>
 					<div class="image"></div>
-				</a>
+				<% end %>
 
-				<a href="#" class="tab">
+				<%= link_to people_path, class: "tab" do %>
 					<div class="image"></div>
-				</a>
+				<% end %>
 			</div>
+
 			<div id="row">
-				<a href="#" class="tab">
+				<%= link_to events_path, class: "tab" do %>
 					<div class="image"></div>
-				</a>
+				<% end %>
 
-				<a href="#" class="tab">
+				<%= link_to registry_path, class: "tab" do %>
 					<div class="image"></div>
-				</a>
+				<% end %>
 
-				<a href="#" class="tab">
+				<%= link_to rsvp_path, class: "tab" do %>
 					<div class="image"></div>
-				</a>
+				<% end %>
 			</div>
 		</div>
 	</div>
