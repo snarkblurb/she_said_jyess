@@ -54,6 +54,11 @@ fonts, mixins, variables
 	src:									font-url('East-Coast-Stationery.ttf');
 }
 
+@font-face {
+	font-family:					always-in-my-heart;
+	src:									font-url('Always_In_My_Heart.ttf');
+}
+
 @mixin vertical-center {
 	position: relative;
 	top: 50%;
@@ -73,6 +78,7 @@ $lightpink:							#f1c2b0;
 $khaki:									#f7e05c;
 $gainsboro:							#e8e3dd;
 $silver:								#c7c7c7;
+$light-salmon:					#fda88b;
 
 $blizzard-texture: 			url(http://www.transparenttextures.com/patterns/blizzard.png);
 $dimension-texture:			url(http://www.transparenttextures.com/patterns/dimension.png);
@@ -165,6 +171,85 @@ h1 {
 .tab:hover .image {
 	transform: translateY(-10px);
 }
+
+
+//-----------------------
+//- Stories
+//-----------------------
+
+#stories-content {
+	text-align: center;
+}
+
+#stories-title-text {
+	position: relative;
+	width: 300px;
+	border: dashed 2px white;
+	margin: 0 auto;
+	@include vertical-center;
+	clear: both;
+
+	h1 {
+		padding: 30px 0 50px 0;
+		line-height: 80%;
+	}
+}
+
+.story-container {
+	position: relative;
+	float: left;
+	width: 35%;
+	padding: 0 7%;
+	color: white;
+
+	p {
+		font-family: enriqueta;
+		font-size: 110%;
+	}
+}
+
+.left {
+	border-right: dashed white 2px;
+}
+
+.cursive {
+	font-family: always-in-my-heart;
+	font-size: 70%;
+	line-height: 70%;
+}
+
+
+.content {
+	position: relative;
+	height: 100%;
+	background-color: $lavender;
+	background-image: image-url('otis-redding.png');
+}
+
+.content-title-text {
+	position: relative;
+	width: 300px;
+	border: dashed 2px white;
+	margin: 0 auto;
+	@include vertical-center;
+}
+
+#people-content {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #footer {
