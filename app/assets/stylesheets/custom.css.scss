@@ -154,23 +154,52 @@ h1 {
 
 .image {
 	display: block;
-	background: $lavender image-url('otis-redding.png');
-	width: 300px;
-	height: 190px;
+	//background: $lavender image-url('otis-redding.png');
+	width: 310px;
+	height: 195px;
 	margin: 0 0 0 0;
 	position: relative;
 	transition: transform 0.2s ease;
-	border: 2px solid white;
+	//border: 2px solid white;
+}
+
+.story {
+	background-image: image-url('story_tab.png');
+}
+
+.home {
+	background-image: image-url('home_tab.png');
+}
+
+.people {
+	background-image: image-url('people_tab.png');
+}
+
+.events {
+	border: dashed 2px white;
+}
+
+.registry {
+	border: dashed 2px white;
+}
+
+.rsvp {
+	background-image: image-url('rsvp_tab.png');
 }
 
 .tab {
 	padding: 10px 5px;
 	display: inline-block;
-}
 
+	&:hover .image {
+		transform: translateY(-10px);
+	}
+}
+/*
 .tab:hover .image {
 	transform: translateY(-10px);
 }
+	*/
 
 
 //-----------------------
