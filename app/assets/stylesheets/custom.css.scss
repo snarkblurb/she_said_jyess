@@ -79,6 +79,12 @@ $khaki:									#f7e05c;
 $gainsboro:							#e8e3dd;
 $silver:								#c7c7c7;
 $light-salmon:					#fda88b;
+$cornsilk:							#fff8dc;
+$linen:									#faf0e6;
+$burlywood:							#f7bd8d;
+$midnight:							#04264d;
+$navy:									#37407A;
+$blush:									#ebc6b3;
 
 $blizzard-texture: 			url(http://www.transparenttextures.com/patterns/blizzard.png);
 $dimension-texture:			url(http://www.transparenttextures.com/patterns/dimension.png);
@@ -120,18 +126,22 @@ body {
 	height: 100%;
 }
 
-.med-dark {
-	background-color: rgba(black, 0.1);
+.solid-navy {
+	background-color: rgba($navy, 1);
 }
 
-.dark {
-	background-color: rgba($dark-purple, 0.6);
+.med-dark-navy {
+	background-color: rgba($navy, 0.5);
+}
+
+.dark-navy {
+	background-color: rgba($navy, 0.8);
 }
 
 #home-text {
 	position: relative;
 	width: 300px;
-	border: dashed white 2px;
+	//border: dashed white 2px;
 	margin: 0 auto;
 	@include vertical-center;
 }
@@ -144,7 +154,7 @@ h1 {
 
 #nav {
 	background-image: $snow-texture;
-	background-color: $gainsboro;
+	background-color: $linen;
 	text-align: center;
 }
 
@@ -176,11 +186,11 @@ h1 {
 }
 
 .events {
-	border: dashed 2px white;
+	background-image: image-url('events_tab.png');
 }
 
 .registry {
-	border: dashed 2px white;
+	background-image: image-url('registry_tab.png');
 }
 
 .rsvp {
@@ -282,7 +292,7 @@ h1 {
 
 
 #footer {
-	background: $silver image-url('otis-redding.png');
+	background: $navy image-url('otis-redding.png');
 	height: 100px;
 }
 
