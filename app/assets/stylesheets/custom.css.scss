@@ -59,6 +59,37 @@ fonts, mixins, variables
 	src:									font-url('Always_In_My_Heart.ttf');
 }
 
+@font-face {
+	font-family:					jacques-and-gilles;
+	src:									font-url('Jacques-and-Gilles.otf');
+}
+
+@font-face {
+	font-family:					linowrite;
+	src:									font-url('linowrite.ttf');
+}
+
+@font-face {
+	font-family:					valentina;
+	src:									font-url('Valentina-Regular.otf');
+}
+
+@font-face {
+	font-family:					chunkfive;
+	src:									font-url('Chunkfive.otf');
+}
+
+@font-face {
+	font-family:					arvo;
+	src:									font-url('Arvo/Arvo-Regular.ttf');
+}
+
+@font-face {
+	font-family:					typo;
+	src:									font-url('Typo-Light.ttf');
+}
+
+
 @mixin vertical-center {
 	position: relative;
 	top: 50%;
@@ -85,6 +116,7 @@ $burlywood:							#f7bd8d;
 $midnight:							#04264d;
 $navy:									#37407A;
 $blush:									#ebc6b3;
+$goldenrod:							#daa520;
 
 $blizzard-texture: 			url(http://www.transparenttextures.com/patterns/blizzard.png);
 $dimension-texture:			url(http://www.transparenttextures.com/patterns/dimension.png);
@@ -114,9 +146,8 @@ body {
 	position: relative;
 	height: 100%;
 	//background-image: image-url('otis-redding.png');
-	background-image: image-url('goofy_engagement_sepia.jpg');
+	//background-image: image-url('goofy_engagement_sepia.jpg');
 	background-size: cover;
-	background-color: $khaki;
 	text-align: center;
 }
 
@@ -140,17 +171,23 @@ body {
 
 #home-text {
 	position: relative;
-	width: 300px;
-	//border: dashed white 2px;
+	width: 700px;
 	margin: 0 auto;
+	color: $burlywood;
 	@include vertical-center;
+
+	h1 {
+		font-family: jacques-and-gilles;
+		font-size: 6em;
+	}
+
+	h2 {
+		font-family: typo;
+		font-size: 2.5em;
+		margin-top: 60px;
+	}
 }
 
-h1 {
-	font-family: east-coast-stationery;
-	color: white;
-	font-size: 5em;
-}
 
 #nav {
 	background-image: $snow-texture;
@@ -261,8 +298,8 @@ h1 {
 .content {
 	position: relative;
 	height: 100%;
-	background-color: $lavender;
-	background-image: image-url('otis-redding.png');
+	background-color: $navy;
+	//background-image: image-url('otis-redding.png');
 }
 
 .content-title-text {
@@ -277,7 +314,13 @@ h1 {
 
 }
 
-
+.rsvp-form  {
+	width: 760px;
+	height: 650px;
+	display: block;
+	margin: 0 auto !important;
+	@include vertical-center;
+}
 
 
 
