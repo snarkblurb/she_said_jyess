@@ -314,6 +314,10 @@ body {
 
 }
 
+.rsvp-form {
+	position: relative;
+}
+
 .rsvp-form  {
 	width: 760px;
 	height: 620px;
@@ -358,7 +362,8 @@ body {
 	width: 200px;
 	height: 200px;
 	border-radius: 50% 50%;
-	border: dashed 2px white;
+	//border: dashed 2px white;
+	box-shadow: 0 0 2px 2px white;
 	margin: 0 15px;
 	transition: transform 0.2s ease;
 
