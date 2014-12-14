@@ -89,6 +89,11 @@ fonts, mixins, variables
 	src:									font-url('Typo-Light.ttf');
 }
 
+@font-face {
+	font-family:					big-john;
+	src:									font-url('Big_John-Slim_Joe/BIG_JOHN.otf');
+}
+
 
 @mixin vertical-center {
 	position: relative;
@@ -242,11 +247,6 @@ body {
 		transform: translateY(-10px);
 	}
 }
-/*
-.tab:hover .image {
-	transform: translateY(-10px);
-}
-	*/
 
 
 //-----------------------
@@ -316,17 +316,78 @@ body {
 
 .rsvp-form  {
 	width: 760px;
-	height: 650px;
+	height: 620px;
 	display: block;
 	margin: 0 auto !important;
 	@include vertical-center;
 }
 
 
+//==============
+// Wedding Party
+//==============
 
+#people-content {
 
+	h1 {
+		position: relative;
+		font-family: jacques-and-gilles;
+		font-size: 4em;
+		color: $burlywood;
+		text-align: center;
+		padding-top: 20px;
+	}
+}
 
+#people-container {
+	width: 1190px;
+	margin: 40px auto 0 auto;
 
+	.keith {
+		background-image: image-url('keith.png');
+	}
+}	
+
+.people-row {
+	margin: 30px 0;
+}
+
+.person {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 50% 50%;
+	border: dashed 2px white;
+	margin: 0 15px;
+	transition: transform 0.2s ease;
+
+	&:hover {
+		transform: translateY(-5px);
+	}
+}
+
+.overlay-hover {
+	background-color: rgba(black, 0.4);
+	color: white;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50% 50%;
+	opacity: 0;	
+	transition: opacity 0.2s ease;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	.overlay-title {
+		text-align: center;
+		@include vertical-center;
+		font-family: big-john;
+	}
+}
 
 
 
