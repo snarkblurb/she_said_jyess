@@ -178,7 +178,7 @@ body {
 	position: relative;
 	width: 700px;
 	margin: 0 auto;
-	color: $burlywood;
+	color: white;
 	@include vertical-center;
 
 	h1 {
@@ -370,6 +370,7 @@ body {
 	&:hover {
 		transform: translateY(-5px);
 	}
+
 }
 
 .overlay-hover {
