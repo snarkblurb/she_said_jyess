@@ -119,6 +119,7 @@ $cornsilk:							#fff8dc;
 $linen:									#faf0e6;
 $burlywood:							#f7bd8d;
 $midnight:							#04264d;
+$midnight-blue:					#2f3663;
 $navy:									#37407A;
 $blush:									#ebc6b3;
 $goldenrod:							#daa520;
@@ -151,10 +152,11 @@ body {
 	position: relative;
 	height: 100%;
 	//background-image: image-url('otis-redding.png');
-	//background-image: image-url('goofy_engagement_sepia.jpg');
+	//background-image: image-url('top_of_garden.jpg');
 	background-size: cover;
 	text-align: center;
 }
+
 
 .overlay {
 	position: relative;
@@ -176,10 +178,12 @@ body {
 
 #home-text {
 	position: relative;
-	width: 700px;
-	margin: 0 auto;
-	color: white;
-	@include vertical-center;
+	top: 80px;
+	text-align: center;
+	color: $burlywood;
+	//width: 700px;
+	//margin: 0 auto;
+	//@include vertical-center;
 
 	h1 {
 		font-family: jacques-and-gilles;
@@ -344,8 +348,8 @@ body {
 }
 
 #people-container {
-	width: 1190px;
-	margin: 40px auto 0 auto;
+	width: 1120px;
+	margin: 60px auto 0 auto;
 
 	.keith {
 		background-image: image-url('keith.png');
@@ -359,12 +363,12 @@ body {
 .person {
 	position: relative;
 	display: inline-block;
-	width: 200px;
-	height: 200px;
+	width: 180px;
+	height: 180px;
 	border-radius: 50% 50%;
 	//border: dashed 2px white;
 	box-shadow: 0 0 2px 2px white;
-	margin: 0 15px;
+	margin: 0 20px;
 	transition: transform 0.2s ease;
 
 	&:hover {
