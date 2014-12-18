@@ -94,6 +94,21 @@ fonts, mixins, variables
 	src:									font-url('Big_John-Slim_Joe/BIG_JOHN.otf');
 }
 
+@font-face {
+	font-family:					slim-joe;
+	src:									font-url('Big_John-Slim_Joe/Slim_Joe.otf');
+}
+
+@font-face {
+	font-family:					brandon-grotesque;
+	src:									font-url('Brandon_reg.otf');
+}
+
+@font-face {
+	font-family:					carolyna-pro;
+	src:									font-url('CarolynaPro.otf');
+}
+
 
 @mixin vertical-center {
 	position: relative;
@@ -122,7 +137,8 @@ $midnight:							#04264d;
 $midnight-blue:					#2f3663;
 $navy:									#37407A;
 $blush:									#ebc6b3;
-$goldenrod:							#daa520;
+//$goldenrod:							#daa520;
+$goldenrod:							#e6b830;
 
 $blizzard-texture: 			url(http://www.transparenttextures.com/patterns/blizzard.png);
 $dimension-texture:			url(http://www.transparenttextures.com/patterns/dimension.png);
@@ -140,12 +156,13 @@ $snow-texture:					url(http://www.transparenttextures.com/patterns/snow.png);
 body {
 	position: relative;
 	min-width: 1200px;
-	height: 800px;
+	height: 820px;
 }
 
 #main-container {
 	position: relative;
-	height: 680px;
+	height: 700px;
+	border-bottom: $goldenrod solid 6px;
 }
 
 #home-content {
@@ -178,12 +195,9 @@ body {
 
 #home-text {
 	position: relative;
-	top: 80px;
+	top: 100px;
 	text-align: center;
 	color: $burlywood;
-	//width: 700px;
-	//margin: 0 auto;
-	//@include vertical-center;
 
 	h1 {
 		font-family: jacques-and-gilles;
@@ -219,27 +233,27 @@ body {
 	//border: 2px solid white;
 }
 
-.story {
+.story-tab {
 	background-image: image-url('story_tab.png');
 }
 
-.home {
+.home-tab {
 	background-image: image-url('home_tab.png');
 }
 
-.people {
+.people-tab {
 	background-image: image-url('people_tab.png');
 }
 
-.events {
+.events-tab {
 	background-image: image-url('events_tab.png');
 }
 
-.registry {
+.registry-tab {
 	background-image: image-url('registry_tab.png');
 }
 
-.rsvp {
+.rsvp-tab {
 	background-image: image-url('rsvp_tab.png');
 }
 
@@ -253,50 +267,32 @@ body {
 }
 
 
-//-----------------------
-//- Stories
-//-----------------------
+//=======================
+// Stories
+//=======================
 
 #stories-content {
 	text-align: center;
 }
 
-#stories-title-text {
+#stories-content {
 	position: relative;
-	width: 300px;
-	border: dashed 2px white;
-	margin: 0 auto;
-	@include vertical-center;
-	clear: both;
-
-	h1 {
-		padding: 30px 0 50px 0;
-		line-height: 80%;
-	}
+	display: block;
 }
 
-.story-container {
+.story {
 	position: relative;
-	float: left;
-	width: 35%;
-	padding: 0 7%;
-	color: white;
-
-	p {
-		font-family: enriqueta;
-		font-size: 110%;
-	}
+	display: inline-block;
+	width: 400px;
+	text-align: top;
 }
 
-.left {
-	border-right: dashed white 2px;
-}
 
-.cursive {
-	font-family: always-in-my-heart;
-	font-size: 70%;
-	line-height: 70%;
-}
+
+
+//=======================
+// Content
+//=======================
 
 
 .content {
@@ -314,9 +310,14 @@ body {
 	@include vertical-center;
 }
 
-#people-content {
 
-}
+
+
+
+//=====================
+// RSVP
+//=====================
+
 
 .rsvp-form {
 	position: relative;
@@ -331,9 +332,11 @@ body {
 }
 
 
-//==============
+
+
+//====================
 // Wedding Party
-//==============
+//====================
 
 #people-content {
 
@@ -379,7 +382,7 @@ body {
 
 .overlay-hover {
 	background-color: rgba(black, 0.4);
-	color: white;
+	color: $linen;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -400,14 +403,83 @@ body {
 }
 
 
+//===================
+// Events
+// ==================
+
+#events-content {
+	
+	h1 {
+		position: relative;
+		font-family: jacques-and-gilles;
+		font-size: 4em;
+		color: $burlywood;
+		text-align: center;
+		padding-top: 20px;
+	}
+}
+
+.events-row {
+	display: block;
+	position: relative;
+	height: 404px;
+	top: 70px;
+}
+
+.event-desc {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	height: 100%;
+	width: 33%;
+	color: $linen;
+
+	h2 {
+		font-family: jacques-and-gilles;
+		font-size: 2.5em;
+		color: $burlywood;
+		padding-bottom: 20px;
+	}
+
+	p {
+		font-size: 1.5em;
+		font-family: brandon-grotesque;
+		padding-bottom: 20px;
+		line-height: 1.2em;
+	}
+}
+
+.event-top {
+	top: 10px;
+}
+
+.event-bottom {
+	top: 160px;
+}
 
 
+#events-map-container {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 400px;
+	height: 400px;
+	border-radius: 50% 50%;
+	border: solid $burlywood 4px;
+}
 
+
+//===================
+// Footer
+//===================
 
 
 #footer {
-	background: $navy image-url('otis-redding.png');
-	height: 100px;
+	background-color: $navy;
+	border-top: $goldenrod solid 6px;
+	//background-image: image-url('otis-redding.png');
+	height: 35px;
 }
 
 
