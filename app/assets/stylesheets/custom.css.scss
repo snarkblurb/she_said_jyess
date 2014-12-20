@@ -109,6 +109,11 @@ fonts, mixins, variables
 	src:									font-url('CarolynaPro.otf');
 }
 
+@font-face {
+	font-family:					znikomit;
+	src:									font-url('Znikomit.otf');
+}
+
 
 @mixin vertical-center {
 	position: relative;
@@ -205,7 +210,7 @@ body {
 	}
 
 	h2 {
-		font-family: typo;
+		font-family: znikomit;
 		font-size: 2.5em;
 		margin-top: 60px;
 	}
@@ -444,29 +449,32 @@ body {
 
 	p {
 		font-size: 1.5em;
-		font-family: brandon-grotesque;
+		font-family: znikomit;
 		padding-bottom: 20px;
 		line-height: 1.2em;
 	}
 }
 
-.event-top {
-	top: 10px;
+.event-mid {
+	top: 60px;
 }
 
-.event-bottom {
-	top: 160px;
-}
 
 
 #events-map-container {
 	position: relative;
 	display: inline-block;
 	text-align: center;
-	width: 400px;
+	width: 332px;
 	height: 400px;
+	margin: 0 34px; 
 	border-radius: 50% 50%;
-	//border: solid $burlywood 4px;
+
+	transition: transform 0.2s ease;
+	
+	&:hover {
+		transform: translateY(-10px);
+	}
 }
 
 
