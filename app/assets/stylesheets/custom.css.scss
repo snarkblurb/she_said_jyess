@@ -144,6 +144,7 @@ $navy:									#37407A;
 $blush:									#ebc6b3;
 //$goldenrod:							#daa520;
 $goldenrod:							#e6b830;
+$gray:									#bbbbbb;
 
 $blizzard-texture: 			url(http://www.transparenttextures.com/patterns/blizzard.png);
 $dimension-texture:			url(http://www.transparenttextures.com/patterns/dimension.png);
@@ -161,13 +162,13 @@ $snow-texture:					url(http://www.transparenttextures.com/patterns/snow.png);
 body {
 	position: relative;
 	min-width: 1200px;
-	height: 820px;
+	height: 700px;
 }
 
 #main-container {
 	position: relative;
 	height: 700px;
-	border-bottom: $goldenrod solid 6px;
+	border-bottom: $gray solid 6px;
 }
 
 #home-content {
@@ -213,6 +214,7 @@ body {
 		font-family: znikomit;
 		font-size: 2.5em;
 		margin-top: 60px;
+		color: $linen;
 	}
 }
 
@@ -326,16 +328,22 @@ body {
 //=====================
 
 
+.rsvp-content {
+	height: 870px !important;
+}
+
+
 .rsvp-form {
 	position: relative;
 }
 
 .rsvp-form  {
-	width: 760px;
-	height: 620px;
+	position: relative;
+	width: 650px;
+	height: 850px;
 	display: block;
 	margin: 0 auto !important;
-	@include vertical-center;
+	//@include vertical-center;
 }
 
 
@@ -503,7 +511,7 @@ body {
 
 #footer {
 	background-color: $navy;
-	border-top: $goldenrod solid 6px;
+	border-top: $gray solid 6px;
 	//background-image: image-url('otis-redding.png');
 	height: 35px;
 }
