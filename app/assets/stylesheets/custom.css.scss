@@ -217,6 +217,7 @@ body {
 }
 
 
+
 #nav {
 	background-image: $snow-texture;
 	background-color: $linen;
@@ -230,10 +231,11 @@ body {
 .image {
 	display: block;
 	//background: $lavender image-url('otis-redding.png');
-	width: 310px;
+	width: 315px;
 	height: 195px;
 	margin: 0 0 0 0;
 	position: relative;
+	background-repeat: no-repeat;
 	transition: transform 0.2s ease;
 	//border: 2px solid white;
 }
@@ -386,7 +388,7 @@ body {
 }
 
 .overlay-hover {
-	background-color: rgba(black, 0.4);
+	background-color: rgba(black, 0.6);
 	color: $linen;
 	position: absolute;
 	top: 0;
@@ -403,7 +405,7 @@ body {
 	.overlay-title {
 		text-align: center;
 		@include vertical-center;
-		font-family: big-john;
+		font-family: znikomit;
 	}
 }
 
@@ -455,8 +457,20 @@ body {
 	}
 }
 
+.event-text {
+	position: relative;
+}
+
 .event-mid {
 	top: 60px;
+}
+
+.event-left {
+	left: 30px;
+}
+
+.event-right {
+	right: 0px;
 }
 
 
@@ -470,10 +484,14 @@ body {
 	margin: 0 34px; 
 	border-radius: 50% 50%;
 
-	transition: transform 0.2s ease;
-	
-	&:hover {
-		transform: translateY(-10px);
+
+	img {
+		position: relative;
+		transition: transform 0.2s ease;
+		
+		&:hover {
+			transform: scale(1.1,1.1);
+		}
 	}
 }
 
