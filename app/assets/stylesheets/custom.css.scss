@@ -199,6 +199,11 @@ body {
 	background-color: rgba($navy, 0.8);
 }
 
+.med-dark-black {
+	background-color: rgba(black, 0.5);
+}
+
+
 #home-text {
 	position: relative;
 	top: 100px;
@@ -238,6 +243,7 @@ body {
 	margin: 0 0 0 0;
 	position: relative;
 	background-repeat: no-repeat;
+	background-position: center center;
 	transition: transform 0.2s ease;
 	//border: 2px solid white;
 }
@@ -280,6 +286,11 @@ body {
 // Stories
 //=======================
 
+.main-story {
+	background-image: image-url('top_of_garden.jpg');
+	background-size: cover;
+}
+
 #stories-content {
 	text-align: center;
 }
@@ -318,7 +329,6 @@ body {
 	margin: 0 auto;
 	@include vertical-center;
 }
-
 
 
 
@@ -498,7 +508,7 @@ body {
 		transition: transform 0.2s ease;
 		
 		&:hover {
-			transform: scale(1.1,1.1);
+			transform: scale(1.05,1.05);
 		}
 	}
 }
