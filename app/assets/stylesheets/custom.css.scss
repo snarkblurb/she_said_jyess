@@ -292,19 +292,42 @@ body {
 }
 
 #stories-content {
-	text-align: center;
-}
-
-#stories-content {
 	position: relative;
 	display: block;
+	width: 1150px;
+	height: 639px;
+	margin: 0 auto;
+	text-align: center;
+	background-image: image-url('top_of_garden_copy_2.jpg');
+	background-size: cover;
+	@include vertical-center;
+	border: $gray solid 2px;
+	box-shadow: 6px 6px 5px #1c1c1c;
+
+	h1 {
+		font-family: jacques-and-gilles;
+		font-size: 4em;
+		color: white;
+	}
 }
 
-.story {
-	position: relative;
-	display: inline-block;
+#story-text-container {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	display: block;
+	height: 460px;
 	width: 400px;
-	text-align: top;
+	color: $linen;
+	//background-color: $navy;
+	background-color: transparent;
+	//box-shadow: inset 6px 6px 5px #1c1c1c;
+	border-radius: 5px;
+	border: $gray solid 2px;
+
+	p {
+	}
+
 }
 
 
@@ -447,8 +470,10 @@ body {
 .events-row {
 	display: block;
 	position: relative;
+	max-width: 1600px;
 	height: 404px;
 	top: 70px;
+	margin: 0 auto;
 }
 
 .event-desc {
