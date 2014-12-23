@@ -101,7 +101,13 @@ fonts, mixins, variables
 
 @font-face {
 	font-family:					brandon-grotesque;
-	src:									font-url('Brandon_reg.otf');
+	src:									font-url('Brandon_Complete/Brandon_reg.otf');
+}
+
+@font-face {
+	font-family:					brandon-grotesque;
+	src:									font-url('Brandon_Complete/Brandon_light.otf');
+	font-weight:					light;
 }
 
 @font-face {
@@ -112,6 +118,11 @@ fonts, mixins, variables
 @font-face {
 	font-family:					znikomit;
 	src:									font-url('Znikomit.otf');
+}
+
+@font-face {
+	font-family:					roboto-slab;
+	src:									font-url('roboto-slab/RobotoSlab-Regular.ttf');
 }
 
 
@@ -141,6 +152,7 @@ $burlywood:							#f7bd8d;
 $midnight:							#04264d;
 $midnight-blue:					#2f3663;
 $navy:									#37407A;
+$light-navy:						#535C92;
 $blush:									#ebc6b3;
 //$goldenrod:							#daa520;
 $goldenrod:							#e6b830;
@@ -302,34 +314,94 @@ body {
 	background-size: cover;
 	@include vertical-center;
 	border: $gray solid 2px;
-	box-shadow: 6px 6px 5px #1c1c1c;
+	//box-shadow: 6px 6px 5px #1c1c1c;
 
 	h1 {
+		position: relative;
+		right: 90px;
 		font-family: jacques-and-gilles;
 		font-size: 4em;
 		color: white;
 	}
 }
 
+#story-tabs-container {
+	position: absolute;
+	display: block;
+	right: 20px;
+	bottom: 510px;
+
+	height: 60px;
+	width: 421px;
+}
+
+.story-nav-tab {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	background-color: $light-navy;
+	text-align: center;
+	box-shadow: 5px 5px 5px #1c1c1c;
+	@include vertical-center;
+
+	&:hover {
+		background-color: $burlywood;
+	}
+}
+
+
+#his-tab {
+	margin-right: 5px;
+}
+
+#her-tab, #back-tab {
+	margin: 0 5px;
+}
+
+#his-tab, #her-tab, #back-tab {
+	width: 20%;
+}
+
+#proposal-tab {
+	margin-left: 5px;
+	width: 30%;
+}
+
+
 #story-text-container {
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
 	display: block;
-	height: 460px;
-	width: 400px;
-	color: $linen;
-	//background-color: $navy;
-	background-color: transparent;
+	height: 478px;
+	width: 421px;
+	color: white;
+	background-color: $light-navy;
+	//background-image: image-url('stories_background.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	box-shadow: 6px 6px 5px #1c1c1c;
+	//background-color: transparent;
 	//box-shadow: inset 6px 6px 5px #1c1c1c;
-	border-radius: 5px;
-	border: $gray solid 2px;
-
-	p {
-	}
-
+	//border-radius: 5px;
+	//border: $gray solid 2px;
 }
 
+#story-text {
+	padding: 20px 30px;
+
+	h2 {
+		font-family: znikomit;
+	}
+
+	p {
+		line-height: 1.3em;
+		font-size: 115%;
+		font-family: brandon-grotesque;
+		font-weight: light;
+		padding-top: 17px;
+	}
+}
 
 
 
