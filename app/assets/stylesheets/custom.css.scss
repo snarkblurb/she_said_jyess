@@ -125,6 +125,17 @@ fonts, mixins, variables
 	src:									font-url('roboto-slab/RobotoSlab-Regular.ttf');
 }
 
+@font-face {
+	font-family:					stafford;
+	src:									font-url('Stafford/Stafford-Serial-Regular.ttf');
+}
+
+@font-face {
+	font-family:					stafford;
+	src:									font-url('Stafford/Stafford-Serial-ExtraLight-Regular.ttf');
+	font-weight:					light;
+}
+
 
 @mixin vertical-center {
 	position: relative;
@@ -583,7 +594,7 @@ body {
 	h1 {
 		position: relative;
 		font-family: jacques-and-gilles;
-		font-size: 4em;
+		font-size: 5em;
 		color: $burlywood;
 		text-align: center;
 		padding-top: 20px;
@@ -595,7 +606,7 @@ body {
 	position: relative;
 	max-width: 1600px;
 	height: 404px;
-	top: 70px;
+	top: 60px;
 	margin: 0 auto;
 }
 
@@ -674,12 +685,29 @@ body {
 
 	h1 {
 		position: relative;
-		font-size: 4em;
+		font-size: 5em;
 		color: $burlywood;
-		top: 50px;
+		margin-top: 50px;
 	}
 }
 
+#registry-links-container {
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-top: 70px;
+}
+
+.reg-link {
+	display: inline-block;
+	position: relative;
+}
+
+.reg-link-mid {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+}
 
 
 //===================
