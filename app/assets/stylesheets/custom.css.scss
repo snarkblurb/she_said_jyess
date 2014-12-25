@@ -329,23 +329,40 @@ body {
 	position: absolute;
 	display: block;
 	right: 20px;
-	bottom: 510px;
+	bottom: 515px;
 
 	height: 60px;
-	width: 421px;
+	width: 455px;
 }
 
 .story-nav-tab {
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	height: 100%;
+	top: 0px;
 	background-color: $light-navy;
 	text-align: center;
-	box-shadow: 5px 5px 5px #1c1c1c;
+	border: $gray solid 2px;
+	//box-shadow: 5px 5px 5px #1c1c1c;
 	@include vertical-center;
+	transition: transform 0.2s ease;
 
 	&:hover {
-		background-color: $burlywood;
+		transform: translateY(-37px);
+		//box-shadow: 5px 5px 5px #1c1c1c;
+	}
+}
+
+.story-tab-text {
+	color: white;
+	text-decoration: none;
+	font-family: znikomit;
+	height: 100%;
+	width: 100%;
+
+	p {
+		font-size: 1.2em;
+		@include vertical-center;
 	}
 }
 
@@ -359,36 +376,61 @@ body {
 }
 
 #his-tab, #her-tab, #back-tab {
-	width: 20%;
+	width: 19%;
 }
 
 #proposal-tab {
 	margin-left: 5px;
-	width: 30%;
+	width: 25%;
 }
 
 
-#story-text-container {
+.trigger {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.story-text-container {
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
 	display: block;
-	height: 478px;
-	width: 421px;
+	height: 438px;
+	width: 391px;
+	padding: 20px 30px;
+	text-align: center;
 	color: white;
 	background-color: $light-navy;
+	border: $gray solid 2px;
+
+
+	h2 {
+		font-family: znikomit;
+	}
+
+	p {
+		line-height: 1.3em;
+		font-size: 115%;
+		font-family: brandon-grotesque;
+		font-weight: light;
+		padding-top: 17px;
+	}
 	//background-image: image-url('stories_background.png');
-	background-position: center center;
-	background-repeat: no-repeat;
-	box-shadow: 6px 6px 5px #1c1c1c;
+	//box-shadow: 6px 6px 5px #1c1c1c;
 	//background-color: transparent;
 	//box-shadow: inset 6px 6px 5px #1c1c1c;
 	//border-radius: 5px;
-	//border: $gray solid 2px;
+	//background-position: center center;
+	//background-repeat: no-repeat;
 }
 
-#story-text {
+.story-text {
+	position: absolute;
 	padding: 20px 30px;
+	text-align: center;
+	width: 85%;
 
 	h2 {
 		font-family: znikomit;
@@ -404,6 +446,9 @@ body {
 }
 
 
+#his-text:target, #her-text:target, #back-text:target, #proposal-text:target {
+	z-index: 1;
+}
 
 //=======================
 // Content
