@@ -169,6 +169,7 @@ $snow-texture:					url(http://www.transparenttextures.com/patterns/snow.png);
 * {
 	margin: 0;
 	padding: 0;
+//	-webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -343,11 +344,14 @@ body {
 	background-color: $light-navy;
 	text-align: center;
 	border: $gray solid 2px;
+	border-radius: 5px;
 	//box-shadow: 5px 5px 5px #1c1c1c;
 	@include vertical-center;
-	transition: transform 0.2s ease;
+	-webkit-transition: all 200ms ease;
+	transition: transform 200ms ease;
 
 	&:hover {
+		-webkit-transform: translateY(-37px);
 		transform: translateY(-37px);
 		//box-shadow: 5px 5px 5px #1c1c1c;
 	}
@@ -404,6 +408,7 @@ body {
 	color: white;
 	background-color: $light-navy;
 	border: $gray solid 2px;
+	border-radius: 5px;
 
 
 	h2 {
@@ -540,6 +545,7 @@ body {
 	transition: transform 0.2s ease;
 
 	&:hover {
+		-webkit-transform:translateY(-5px);
 		transform: translateY(-5px);
 	}
 
@@ -647,13 +653,33 @@ body {
 
 	img {
 		position: relative;
+		-webkit-transition: -webkit-transform 0.2s ease;
 		transition: transform 0.2s ease;
 		
 		&:hover {
+			-webkit-transform: scale(1.05, 1.05);
 			transform: scale(1.05,1.05);
 		}
 	}
 }
+
+
+//===================
+// Registry
+//===================
+
+#registry-header {
+	text-align: center;
+	font-family: jacques-and-gilles;
+
+	h1 {
+		position: relative;
+		font-size: 4em;
+		color: $burlywood;
+		top: 50px;
+	}
+}
+
 
 
 //===================
