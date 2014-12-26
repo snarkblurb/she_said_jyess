@@ -594,17 +594,22 @@ body {
 	h1 {
 		position: relative;
 		font-family: jacques-and-gilles;
-		font-size: 5em;
+		font-size: 4em;
 		color: $burlywood;
 		text-align: center;
 		padding-top: 20px;
+		background-image: image-url('stars_top_title.png');
+		background-repeat: no-repeat;
+		background-position: center top;
+		height: 160px;
 	}
 }
+
 
 .events-row {
 	display: block;
 	position: relative;
-	max-width: 1600px;
+	max-width: 1200px;
 	height: 404px;
 	top: 60px;
 	margin: 0 auto;
@@ -701,6 +706,11 @@ body {
 .reg-link {
 	display: inline-block;
 	position: relative;
+	transition: transform 0.2s ease;
+
+	&:hover {
+		transform: scale(1.03, 1.03);
+	}
 }
 
 .reg-link-mid {
