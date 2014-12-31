@@ -495,7 +495,7 @@ body {
 
 
 .rsvp-content {
-	height: 940px !important;
+	height: 1180px !important;
 }
 
 
@@ -506,10 +506,10 @@ body {
 .rsvp-form  {
 	position: relative;
 	width: 650px;
-	height: 920px;
+	height: 1160px;
 	display: block;
 	margin: 0 auto !important;
-	//@include vertical-center;
+	@include vertical-center;
 }
 
 
@@ -734,3 +734,23 @@ body {
 }
 
 
+
+//=====================
+// Password
+//=====================
+
+#password-content {
+	position: relative;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	@include vertical-center;
+
+	h1 {
+		font-size: 3em;
+		color: $burlywood;
+		font-family: znikomit;
+		margin-bottom: 30px;
+	}
+
+}

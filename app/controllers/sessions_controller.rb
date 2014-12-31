@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 	
-	layout "sessions"
+	layout "application"
 
   def new
   end
@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
 	def create
 		user = User.find_by(name: params[:session][:name])
 		if user.authenticate(params[:session][:password])
+			log_in user
 			redirect_to root_path
 		else
 			flash.now[:danger] = "Try again please :)"
