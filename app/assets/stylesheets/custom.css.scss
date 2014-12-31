@@ -495,7 +495,7 @@ body {
 
 
 .rsvp-content {
-	height: 870px !important;
+	height: 940px !important;
 }
 
 
@@ -506,7 +506,7 @@ body {
 .rsvp-form  {
 	position: relative;
 	width: 650px;
-	height: 850px;
+	height: 920px;
 	display: block;
 	margin: 0 auto !important;
 	//@include vertical-center;
@@ -629,6 +629,7 @@ body {
 		font-size: 2.5em;
 		color: $burlywood;
 		padding-bottom: 20px;
+		padding-top: 30px;
 	}
 
 	p {

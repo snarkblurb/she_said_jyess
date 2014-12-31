@@ -1,0 +1,16 @@
+<h1>Speak, friend, and enter</h1>
+
+<% flash.each do |message_type, message| %>
+	<div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
+<%= form_for(:session, url: login_path) do |f| %>
+
+	<%= f.hidden_field :name, { value: "Guest" } %>
+
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+
+	<%= f.submit "Enter" %>	
+
+<% end %>
