@@ -174,6 +174,9 @@ $dimension-texture:			url(http://www.transparenttextures.com/patterns/dimension.
 $flowers-texture:				url(http://www.transparenttextures.com/patterns/wild-flowers.png);
 $otis-redding-texture:	url(http://www.transparenttextures.com/patterns/otis-redding.png);
 $snow-texture:					url(http://www.transparenttextures.com/patterns/snow.png);
+$paper-texture:					url(http://www.transparenttextures.com/patterns/paper.png);
+$classy-fabric-texture:	url(http://www.transparenttextures.com/patterns/classy-fabric.png);
+$navy-texture:					url(http://www.transparenttextures.com/patterns/navy.png);
 
 
 
@@ -200,7 +203,7 @@ body {
 	height: 100%;
 	//background-image: image-url('otis-redding.png');
 	//background-image: image-url('top_of_garden.jpg');
-	background-size: cover;
+	//background-size: cover;
 	text-align: center;
 }
 
@@ -475,7 +478,7 @@ body {
 	position: relative;
 	height: 100%;
 	background-color: $navy;
-	//background-image: image-url('otis-redding.png');
+	//background-image: $navy-texture;
 }
 
 .content-title-text {
