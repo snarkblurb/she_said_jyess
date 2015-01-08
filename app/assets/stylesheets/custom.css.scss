@@ -314,7 +314,7 @@ body {
 //=======================
 
 .main-story {
-	background-image: image-url('top_of_garden.jpg');
+	//background-image: image-url('top_of_garden.jpg');
 	background-size: cover;
 }
 
@@ -325,7 +325,8 @@ body {
 	height: 639px;
 	margin: 0 auto;
 	text-align: center;
-	background-image: image-url('top_of_garden_copy_2.jpg');
+	//background-image: image-url('top_of_garden_copy_2.jpg');
+	background-image: image-url('top_of_garden_copy_3.png');
 	background-size: cover;
 	@include vertical-center;
 	border: $gray solid 2px;
