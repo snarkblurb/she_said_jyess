@@ -136,6 +136,11 @@ fonts, mixins, variables
 	font-weight:					light;
 }
 
+@font-face {
+	font-family:					alwayshere;
+	src:									font-url('AlwaysHere.ttf');
+}
+
 
 @mixin vertical-center {
 	position: relative;
@@ -499,7 +504,7 @@ body {
 
 
 .rsvp-content {
-	height: 1180px !important;
+	height: 940px !important;
 }
 
 
@@ -510,7 +515,7 @@ body {
 .rsvp-form  {
 	position: relative;
 	width: 650px;
-	height: 1160px;
+	height: 920px;
 	display: block;
 	margin: 0 auto !important;
 	@include vertical-center;
@@ -633,13 +638,18 @@ body {
 		font-size: 2.5em;
 		color: $burlywood;
 		padding-bottom: 20px;
-		padding-top: 30px;
+		padding-top: 0px;
+	}
+
+	h3 {
+		font-size: 1.9em;
+		font-family: znikomit;
 	}
 
 	p {
 		font-size: 1.5em;
 		font-family: znikomit;
-		padding-bottom: 20px;
+		padding-bottom: 25px;
 		line-height: 1.2em;
 	}
 }
