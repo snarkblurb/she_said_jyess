@@ -521,6 +521,9 @@ body {
 	@include vertical-center;
 }
 
+input[type="text"] {
+	border: solid 2px $burlywood;
+}
 
 
 
