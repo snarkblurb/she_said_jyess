@@ -504,7 +504,7 @@ body {
 
 
 .rsvp-content {
-	height: 940px !important;
+	height: 1100px !important;
 }
 
 
@@ -515,7 +515,7 @@ body {
 .rsvp-form  {
 	position: relative;
 	width: 650px;
-	height: 920px;
+	height: 1000px;
 	display: block;
 	margin: 0 auto !important;
 	@include vertical-center;
@@ -727,7 +727,7 @@ input[type="text"] {
 	transition: transform 0.2s ease;
 
 	&:hover {
-		transform: scale(1.05, 1.05);
+		transform: scale(1.55, 1.05);
 	}
 }
 
