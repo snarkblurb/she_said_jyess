@@ -710,7 +710,7 @@ input[type="text"] {
 		position: relative;
 		font-size: 5em;
 		color: $burlywood;
-		margin-top: 80px;
+		margin-top: 50px;
 	}
 }
 
@@ -718,7 +718,7 @@ input[type="text"] {
 	display: block;
 	position: relative;
 	text-align: center;
-	margin-top: 90px;
+	margin-top: 60px;
 }
 
 .reg-link {
@@ -727,7 +727,7 @@ input[type="text"] {
 	transition: transform 0.2s ease;
 
 	&:hover {
-		transform: scale(1.55, 1.05);
+		transform: scale(1.08, 1.08);
 	}
 }
 
@@ -735,6 +735,14 @@ input[type="text"] {
 	display: inline-block;
 	position: relative;
 	width: 100px;
+}
+
+#reg-text {
+	text-align: center;
+	margin-top: 70px;
+	color: $linen;
+	font-family: znikomit;
+	font-size: .9em;
 }
 
 
